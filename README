@@ -1,27 +1,23 @@
-This is Perl module Template::Plugin::HTMLMobileJp.
+NAME
+    Template::Plugin::HTMLMobileJp - HTML::MobileJp plugin for
+    Template-Toolkit
 
-INSTALLATION
+SYNOPSIS
+        [% USE HTMLMobileJp %]
+        [% HTMLMobileJp.gps_a({carrier => 'E', is_gps => 0, callback_url => 'http://example.com/'}) %]
 
-Template::Plugin::HTMLMobileJp installation is straightforward. If your CPAN shell is set up,
-you should just be able to do
+DESCRIPTION
+    Template::Plugin::HTMLMobileJp is a wrapper of HTML::MobileJp.
 
-    % cpan Template::Plugin::HTMLMobileJp
+    You can call all method of HTML::MobileJp.
 
-Download it, unpack it, then build it as per the usual:
+AUTHOR
+    Tokuhiro Matsuno <tokuhirom@gmail.com>
 
-    % perl Makefile.PL
-    % make && make test
+SEE ALSO
+    Template, HTML::MobileJp
 
-Then install it:
+LICENSE
+    This library is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
 
-    % make install
-
-DOCUMENTATION
-
-Template::Plugin::HTMLMobileJp documentation is available as in POD. So you can do:
-
-    % perldoc Template::Plugin::HTMLMobileJp
-
-to read the documentation online with your favorite pager.
-
-Tokuhiro Matsuno
